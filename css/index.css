@@ -1,46 +1,123 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #4e4e4e;
-    color: black;
-    margin: 0;
-    padding: 0;
+.full_fondo {
+    background-image: url('/img/Multicancha1_O´higginsLoPrado.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-footer {
-    background-color: #4e4e4e;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-    margin-top: auto;
-    position: relative;
-    z-index: 1;
-}
-
-.navbar {
-    border-bottom: 2px solid #ddd;
-}
-
-.bordes {
+.fondo {
+    background-size: cover;
+    background-position: center;
+    height: auto;
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 30px;
 }
 
-.navbar-nav .nav-link {
-    color: #555;
+.color1 {
+    background-color: rgb(148, 148, 148);
 }
 
-.navbar-nav .nav-link:hover {
-    color: #2c3e50;
+.transparent_background {
+    opacity: 0.85;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+.color2 {
+    background-color: #ffffff;
+}
 
-    .container {
-        padding: 20px;
-    }
+.color3 {
+    background-color: #ffffff;
+}
+
+.titulo {
+    color: black;
+    padding: 60px;
+    justify-content: center;
+
+}
+
+.negro {
+    color: black;
+}
+
+.letra {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.letra1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+.carousel {
+    width: 1400px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    display: block;
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 50%;
+    transform: translateY(-50%); 
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.card {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card.visible {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.mision_vision {
+    height: 120px;
+    width: 120px;
 }
