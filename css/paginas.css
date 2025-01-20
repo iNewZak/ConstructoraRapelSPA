@@ -32,6 +32,10 @@ footer {
     padding: 0 30px;
 }
 
+.full_center {
+    align-content: center
+}
+
 .navbar-nav .nav-link {
     color: white;
 }
@@ -76,4 +80,8 @@ footer {
     background-color: #ffffff3f;
     backdrop-filter: blur(2px);
     color: white;
+}
+
+a {
+    text-decoration: none;
 }

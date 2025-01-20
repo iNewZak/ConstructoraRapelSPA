@@ -64,20 +64,39 @@
 
     <div class="container-fluid fondo color3 p-5">
         <div class="container">
-            <h4 class="text-start">Nuestros Servicios</h4>
-
-            <p>Somos una empresa especializada en la construcción de plazas y áreas verdes, comprometidos con el
-                desarrollo de espacios públicos de alta calidad que promuevan el bienestar y la convivencia. Nos
-                enfocamos en crear entornos sostenibles, accesibles y estéticamente agradables, utilizando materiales de
-                primera y técnicas innovadoras para garantizar la durabilidad y funcionalidad de cada proyecto. Nuestro
-                equipo de profesionales altamente capacitados trabaja de manera eficiente para cumplir con los plazos
-                establecidos, respetando el medio ambiente y las necesidades de la comunidad. Con nosotros, cada plaza y
-                área verde se convierte en un lugar ideal para disfrutar del aire libre, fomentar el esparcimiento y
-                mejorar la calidad de vida urbana.</p>
+            <div class="row">
+                <div class="col-md-3 col-12" style="align-content: center;">
+                    <h4 class="text-center">Nuestros</h4>
+                    <h4 class="text-center">Servicios</h4>
+                </div>
+                <div class="col-md-8 col-12">
+                    <p>Somos una empresa dedicada a la construcción de plazas y áreas verdes, creando espacios públicos
+                        sostenibles, accesibles y estéticamente agradables. Usamos materiales de calidad y técnicas
+                        innovadoras para garantizar proyectos duraderos y funcionales. Nuestro equipo trabaja
+                        eficientemente, respetando plazos, el medio ambiente y las necesidades comunitarias, fomentando
+                        el bienestar y la calidad de vida urbana.</p>
+                </div>
+                <div class="col-md-1 col-12">
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container-fluid fondo color3 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-12">
+                    <div class="row text-center">
+                        <div class="col-md-4">q</div>
+                        <div class="col-md-4">q</div>
+                        <div class="col-md-4">q</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <h4 class="text-center">Productos</h4>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid blurred-background p-5">
@@ -120,18 +139,26 @@
     </div>
 
     <div class="container-fluid fondo color3 p-5">
-        <div>
-            <h4 class="text-start">Galería</h4>
-        </div>
-        <div class="carousel">
-            <div class="carousel-images">
-                <img src="/img/Multicancha1_O´higginsLoPrado.jpg" alt="Imagen 1" class="carousel-image">
-                <img src="/img/AreasVerdes.jpg" alt="Imagen 2" class="carousel-image">
-                <img src="/img/Multicancha1_O´higginsLoPrado.jpg" alt="Imagen 1" class="carousel-image">
-                <img src="/img/AreasVerdes.jpg" alt="Imagen 2" class="carousel-image">
+        <div class="container">
+            <div class="col-12">
+                <h4 class="text-center">Galería</h4>
             </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="row">
+                <div class="col-12">
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="/img/Multicancha1_O´higginsLoPrado.jpg" alt="Imagen 1"
+                                class="carousel-image img_carousel">
+                            <img src="/img/AreasVerdes.jpg" alt="Imagen 2" class="carousel-image img_carousel">
+                            <img src="/img/Multicancha1_O´higginsLoPrado.jpg" alt="Imagen 1"
+                                class="carousel-image img_carousel">
+                            <img src="/img/AreasVerdes.jpg" alt="Imagen 2" class="carousel-image img_carousel">
+                        </div>
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -158,7 +185,7 @@
                     <ul class="list-unstyled" style="font-size: 15px;">
                         <li>
                             <a href="https://maps.app.goo.gl/i2DkwwE69YTUJibTA" target="_blank" class="text-white"
-                                style="text-decoration: none; ">
+                                style="text-decoration: none;">
                                 <i class="fas fa-map-marker-alt" style="margin-right: 10px; margin-left: 2px;"></i>
                                 Alba 2, parcela 14, Colina, Región Metropolitana
                             </a>
@@ -195,21 +222,18 @@
             const images = document.querySelectorAll('.carousel-image');
             const totalImages = images.length;
 
-            // Actualiza el índice con bucle infinito
             index += step;
 
             if (index < 0) {
-                index = totalImages - 2; // Regresa a la penúltima imagen si retrocede más allá de la primera
+                index = totalImages - 2;
             } else if (index > totalImages - 2) {
-                index = 0; // Regresa a la primera imagen después de la penúltima
+                index = 0;
             }
 
-            // Desplaza las imágenes
             const carouselImages = document.querySelector('.carousel-images');
-            carouselImages.style.transform = `translateX(${-index * 700}px)`; // 500px es el ancho de cada imagen
+            carouselImages.style.transform = `translateX(${-index * 50}%)`;
         }
 
-        // Movimiento automático cada 4 segundos
         setInterval(() => {
             moveSlide(1);
         }, 4000);
