@@ -1,5 +1,5 @@
 .full_fondo {
-    background-image: url('/img/multicancha.jpg');
+    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/multicancha.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
