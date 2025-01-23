@@ -1,17 +1,10 @@
 .full_fondo {
-    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/multicancha.jpg");
+    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/AreasVerdes.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.fondo {
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: 100%;
 }
 
 .color1 {
