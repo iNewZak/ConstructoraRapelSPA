@@ -18,3 +18,20 @@
 .d-none {
     display: none;
 }
+
+.android {
+    margin-top: -100px;
+}
+
+@media (max-width: 768px) {
+
+    .imgplazas {
+        height: 125px;
+        width: 100%;
+    }
+
+    .android {
+        margin-top: -10px;
+    }
+
+}
