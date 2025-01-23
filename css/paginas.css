@@ -32,11 +32,13 @@ footer {
     padding: 10px 0;
 }
 
-.bordes {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 30px;
+.inicio {
+    margin-top: 50px;
+}
+
+
+.final {
+    margin-bottom: 50px;
 }
 
 .full_center {
@@ -68,27 +70,4 @@ footer {
 
 .whatsapp-icon:hover {
     transform: scale(1.1);
-}
-
-.blurred-background {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: #ffffff3f;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.blurred-background2 {
-    background-color: #ffffff3f;
-    backdrop-filter: blur(2px);
-    color: white;
-}
-
-a {
-    text-decoration: none;
 }
