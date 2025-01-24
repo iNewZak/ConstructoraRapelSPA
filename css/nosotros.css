@@ -5,6 +5,14 @@
     font-weight: bold;
 }
 
+.titulo1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 30px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
 img {
     height: 98%;
     width: 98%;
@@ -52,4 +60,8 @@ a {
 
 .padi3 {
     padding: 150px;
+}
+
+li {
+    padding: 5px;
 }
