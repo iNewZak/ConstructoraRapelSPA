@@ -15,15 +15,12 @@
     opacity: 0.85;
 }
 
-.color2 {
-    background-color: #ffffff;
-}
-
 .color3 {
     background-color: #ffffff;
 }
 
 .titulo {
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     padding: 10px;
     justify-content: center;
