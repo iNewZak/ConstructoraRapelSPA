@@ -19,6 +19,9 @@
     background-color: #ffffff;
 }
 
+.full {background: radial-gradient(circle, #1a9423, #57c84d, #a3d977, #c8e6c9);
+}
+
 .titulo {
     font-family: 'Times New Roman', Times, serif;
     color: black;

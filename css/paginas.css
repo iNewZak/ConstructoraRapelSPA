@@ -5,8 +5,8 @@ html, body {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #181818;
-    color: white;
+    background-color: #0b6623;
+    color: #333333;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -15,21 +15,28 @@ body {
 }
 
 header {
-    background-color: #2d1c45;
+    background-color: #0b6623;
+    color: #333333;
     font-family: Arial, sans-serif;
     text-align: end;
     position: relative;
     z-index: 1;
     margin: 0;
     padding: 0;
+    font-weight: 900;
 }
 
 footer {
-    background-color: #2d1c45;
+    background-color: #8b5a2b;
     font-family: Arial, sans-serif;
-    color: white;
+    color: #333333;
     margin-top: auto;
-    padding: 10px 0;
+    padding-top: 30px;
+    font-weight: 800;
+}
+
+footer a {
+    color: #333333;
 }
 
 .inicio {
@@ -38,7 +45,7 @@ footer {
 
 
 .final {
-    margin-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .full_center {
@@ -46,11 +53,11 @@ footer {
 }
 
 .navbar-nav .nav-link {
-    color: white;
+    color: #333333;
 }
 
 .navbar-nav .nav-link:hover {
-    color: white;
+    color: #333333;
 }
 
 .whatsapp-button {
