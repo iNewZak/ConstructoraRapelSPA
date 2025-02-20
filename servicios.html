@@ -7,9 +7,8 @@
     <title>Productos - Constructora Rapel SPA</title>
     <link rel="stylesheet" href="css/paginas.css">
     <link rel="stylesheet" href="css/servicios.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 
@@ -29,6 +28,31 @@
                         <li class="nav-item">
                             <a class="nav-link" href="servicios.html">Servicios</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Nuestros Socios</a>
+                            <ul class="dropdown-menu">
+                                <h6>Constructoras</h6>
+                                <li><a class="dropdown-item"
+                                        href="https://inewzak.github.io/ConstructoraArenaLtdaLimitada/">
+                                        Arena LTDA Limitada</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://inewzak.github.io/ConstructoraCorralonesSPA/">
+                                        Corralones SPA</a></li>
+                                <li><a class="dropdown-item" href="https://inewzak.github.io/ConstructoraLasBrisasSPA/">
+                                        Las Brisas SPA</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://inewzak.github.io/ConstructoraPttSPA/"> PTT
+                                        SPA</a>
+                                </li>
+                                <h6>Consultora</h6>
+                                <li><a class="dropdown-item" href="https://inewzak.github.io/ConsultoraArenaSPA/">
+                                        Arena SPA</a></li>
+                                <h6>Importadora</h6>
+                                <li><a class="dropdown-item"
+                                        href="https://inewzak.github.io/ImportadoraSanVicenteSPA/">San Vicente SPA</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
@@ -41,9 +65,9 @@
         </nav>
     </header>
 
-    
+
     <img src="https://inewzak.github.io/ConstructoraRapelSPA/img/areas_verdes2.jpg" alt="Imagen 3"
-    class="carousel-image img_carousel">
+        class="carousel-image img_carousel">
 
     <div class="container p-5 color2 android">
         <div class="row p-2" style="justify-content: center;">
@@ -64,7 +88,23 @@
         </div>
     </div>
 
+    <div class="container p-5">
+        <h3 class="text-center p-3">Tipos de modelos de plazas</h3>
+        <div class="row modelos">
+            <div class="col-md-4 col-12">
+                <img src="">
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="">
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="">
+            </div>
+        </div>
+    </div>
+
     <div class="container final">
+        <h3 class="text-center">Proyectos realizados</h3>
         <div class="row text-center p-3" style="justify-content: center;" id="plazas">
             <div class="col-md-3 col-6">
                 <img src="img/AreasVerdes.jpg" alt="plaza1" class="imgplazas">
@@ -117,64 +157,96 @@
         </a>
     </div>
 
-    <footer class="pt-3 pb-1">
+    <footer>
         <div class="container-fluid">
-            <div class="container">
-                <h1>Contáctanos</h1>
+            <div class="container" style="padding: 100px;">
                 <div class="row" style="justify-content: center;">
-                    <div class="col-md-1 col-12">
-                    </div>
-                    <div class="col-md-5 col-12">
+                    <div class="col-md-2 col-12">
+                        <h5 style="font-weight: bold;">Enlaces</h5>
                         <div>
-                            <a href="index.html" style="text-decoration: none;" class="text-white">Inicio</a>
+                            <i class='fas fa-angle-right icon2'></i> <a href="index.html"
+                                style="text-decoration: none;">Inicio</a>
                         </div>
                         <div>
-                            <a href="nosotros.html" style="text-decoration: none;" class="text-white">Nosotros</a>
+                            <i class='fas fa-angle-right icon2'></i> <a href="proyectos.html"
+                                style="text-decoration: none;">Proyectos</a>
                         </div>
                         <div>
-                            <a href="servicios.html" style="text-decoration: none;" class="text-white">Servicios</a>
+                            <i class='fas fa-angle-right icon2'></i> <a href="nosotros.html"
+                                style="text-decoration: none;">Nosotros</a>
                         </div>
                         <div>
-                            <a href="contacto.html" style="text-decoration: none;" class="text-white">Contacto</a>
+                            <i class='fas fa-angle-right icon2'></i> <a href="contacto.html"
+                                style="text-decoration: none;">Contacto</a>
                         </div>
                     </div>
-                    <div class="col-md-1 col-12">
+                    <div class="col-md-7 col-12">
+                        <h5 style="font-weight: bold;" class="socios">Otros Socios</h5>
+                        <div class="row socios pb-5 text-center">
+                            <div class="col-md-4 col-12">
+                                <h6 class="dropdown-header">Constructoras</h6>
+                                <a class="dropdown-item"
+                                    href="https://inewzak.github.io/ConstructoraArenaLtdaLimitada/">
+                                    Arena LTDA Limitada</a>
+                                <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraCorralonesSPA/">
+                                    Corralones SPA</a>
+                                <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraRapelSPA/">
+                                    Las Brisas SPA</a>
+                                <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraPttSPA/"> PTT
+                                    SPA</a>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <h6 class="dropdown-header">Consultora</h6>
+                                <a class="dropdown-item" href="https://inewzak.github.io/ConsultoraArenaSPA/">
+                                    Arena SPA</a>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <h6 class="dropdown-header">Importadora</h6>
+                                <a class="dropdown-item" href="https://inewzak.github.io/ImportadoraSanVicenteSPA/">San
+                                    Vicente
+                                    SPA</a>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-5 col-12">
-                        <ul class="list-unstyled" style="font-size: 15px;">
-                            <li>
-                                <a href="https://maps.app.goo.gl/i2DkwwE69YTUJibTA" target="_blank" class="text-white"
-                                    style="text-decoration: none;">
-                                    <i class="fas fa-map-marker-alt" style="margin-right: 10px; margin-left: 2px;"></i>
-                                    Alba 2, parcela 14, Colina, Región Metropolitana
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tel:+56977798555" class="text-white" style="text-decoration: none;">
-                                    <i class="fas fa-phone-alt" style="margin-right: 5px;"></i>
-                                    +56 9 7779 8555
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:constructorarapelchile@gmail.com" class="text-white"
-                                    style="text-decoration: none;">
-                                    <i class="fas fa-envelope" style="margin-right: 5px;"></i>
-                                    constructorarapelchile@gmail.com
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col-md-3 col-12">
+                        <h5 style="font-weight: bold;">Atención a Clientes</h5>
+                        <div>
+                            <i class="fa-solid fa-clock icon"></i>
+                            <a href="index.html" target="_blank" style="text-decoration: none;">
+                                Lun - Sáb : 08:30 a 17:30 hrs.
+                            </a>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <a href="https://maps.app.goo.gl/i2DkwwE69YTUJibTA" target="_blank"
+                                style="text-decoration: none;">
+                                Alba 2, parcela 14, Colina, Santiago
+                            </a>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone-alt icon"></i>
+                            <a href="tel:+56977798555" style="text-decoration: none;">
+                                +56 9 7779 8555
+                            </a>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="mailto:constructorarapelchile@gmail.com" style="text-decoration: none;">
+                                constructorarapelchile@gmail.com
+                            </a>
+                        </div>
                     </div>
+                </div>
+                <div style="font-size: 11px;">
+                    <p class="text-center mt-3">
+                        &copy; 2025 Consultora Las Brisas SPA.
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div class="text-center" style="font-size: 11px;">
-            <p>
-                &copy; 2025 Diseñado por Constructora Rapel SPA.
-            </p>
-        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('verMasBtn').addEventListener('click', function () {
             const hiddenImages = document.querySelectorAll('#plazas .d-none');
@@ -194,8 +266,6 @@
             document.getElementById('verMasBtn').classList.remove('d-none');
             this.classList.add('d-none');
         });</script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

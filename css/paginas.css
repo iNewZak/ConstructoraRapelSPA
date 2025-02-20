@@ -22,7 +22,7 @@ header {
     position: relative;
     z-index: 1;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     font-weight: 900;
 }
 
@@ -36,13 +36,58 @@ footer {
 }
 
 footer a {
-    color: #333333;
+    color: #333333 !important;
 }
 
 .inicio {
     margin-top: 50px;
 }
 
+header h6 {
+    margin-left: 5%;
+    font-weight: bold;
+    color: #333333 !important;
+}
+
+header .dropdown-menu {
+    background-color: #57c84d !important; 
+    border: none; 
+}
+
+header .dropdown-item {
+    color: #636363 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .dropdown-item:hover {
+    background-color: #0b6623 !important;
+    color: #949494 !important;
+}
+
+header .dropdown-item:active {
+    background-color: #bf3a2b !important;
+    color: #333333 !important;
+}
+
+footer .dropdown-menu {
+    background-color: #8b5a2b !important; 
+    border: none; 
+}
+
+footer .dropdown-item {
+    color: #333333 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .dropdown-item:hover {
+    background-color: #ca7f38 !important;
+    color: #333333 !important;
+}
+
+footer .dropdown-item:active {
+    background-color: #bf3a2b !important;
+    color: #333333 !important;
+}
 
 .final {
     padding-bottom: 100px;
@@ -77,4 +122,20 @@ footer a {
 
 .whatsapp-icon:hover {
     transform: scale(1.1);
+}
+
+.socios h6 {
+    font-weight: 900;
+}
+
+.padifooter {
+    padding: 100px !important;
+}
+
+
+@media (max-width: 768px) {
+    .padifooter {
+        padding: 20px !important;
+        margin-bottom: 30px !important;
+    }
 }
