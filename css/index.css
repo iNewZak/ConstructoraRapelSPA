@@ -79,7 +79,7 @@ button:hover {
 }
 
 .nosotros {
-    background-image: url("/img/nosotros.png");
+    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/nosotros.png");
     position: relative;
     background-size: cover;
     background-position: center;
@@ -90,7 +90,7 @@ button:hover {
 }
 
 .contact {
-    background-image: url("/img/areas_verdes1.jpg");
+    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/areas_verdes1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
