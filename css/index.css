@@ -45,18 +45,9 @@
 }
 
 button {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
-    border: none;
-    cursor: pointer;
-    font-size: 30px;
-    justify-content: center;
-    justify-items: center;
-    border-radius: 50%;
-    transform: translateY(-50%);
+    text-align: start !important;
+    text-decoration: none !important;
+    color: #333333 !important;
 }
 
 button:hover {
@@ -73,41 +64,80 @@ button:hover {
     transform: translateY(-50%);
 }
 
-.card {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.card.visible {
-    opacity: 1;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
-
-.card img {
-    transition: transform 0.3s ease-in-out;
-}
 
 .padi {
     padding: 200px;
 }
 
-.card {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    text-decoration: none;
-    align-content: center;
-}
-
-.flecha, .flecha2 {
+.flecha,
+.flecha2 {
     display: flex;
     justify-content: center;
     align-content: center;
     height: auto;
     width: 100%;
+}
+
+.nosotros {
+    background-image: url("/img/nosotros.png");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    background-image: url("/img/areas_verdes1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+}
+
+.mision_vision,
+.mision_vision2 {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: background-size 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision_vision {
+    background-image: url("/img/mision.png");
+}
+
+.mision_vision2 {
+    background-image: url("/img/vision.png");
+}
+
+.mision_vision::before,
+.mision_vision2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.mision_vision *,
+.mision_vision2 * {
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -133,5 +163,15 @@ button:hover {
 
     .marg {
         margin: 15px;
+    }
+
+    .nosotros {
+        background-image: url("/img/nosotros.png");
+        display: flex !important;
+        position: relative !important;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 50px !important;
+        width: 50px !important;
     }
 }

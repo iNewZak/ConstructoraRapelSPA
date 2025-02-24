@@ -20,6 +20,11 @@ img {
     max-width: 100px;
 }
 
+.imgabout {
+    height: 100%;
+    width: 100%;
+}
+
 a {
     font-size: 15px;
 }
@@ -64,47 +69,4 @@ a {
 
 .infojefes li {
     padding: 5px;
-}
-
-.mision_vision,
-.mision_vision2 {
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    transition: background-size 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.mision_vision {
-    background-image: url("/img/mision.png");
-}
-
-.mision_vision2 {
-    background-image: url("/img/vision.png");
-}
-
-.mision_vision::before,
-.mision_vision2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.mision_vision *,
-.mision_vision2 * {
-    position: relative;
-    z-index: 2;
 }
