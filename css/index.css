@@ -115,11 +115,11 @@ button:hover {
 }
 
 .mision_vision {
-    background-image: url("/img/mision.png");
+    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/mision.png");
 }
 
 .mision_vision2 {
-    background-image: url("/img/vision.png");
+    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/vision.png");
 }
 
 .mision_vision::before,
