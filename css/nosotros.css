@@ -1,65 +1,28 @@
-.titulo {
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.titulo1 {
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 30px;
-    margin-left: 10%;
-    font-weight: bold;
-}
-
 .imgabout {
     height: 100%;
     width: 100%;
 }
 
-a {
-    font-size: 15px;
-}
-
-.card {
-    padding: 30px;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    text-decoration: none;
-    align-content: center;
-}
-
-.card.visible {
-    opacity: 1;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
-
-.card img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover img {
-    transform: scale(1.1);
-}
-
-.padi{
-    padding: 5px;
-}
-
-.color2 {
-    background-color: rgb(117, 88, 145);
-    color: white;
-}
-
-.padi3 {
-    padding: 150px;
-}
-
 .infojefes li {
     padding: 5px;
+}
+
+.derecha {
+    margin-left: 10%;
+}
+
+.rapel {
+    font-weight: 900;
+    margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+    .derecha {
+        margin-left: 0%;
+    }
+
+    .infojefes li {
+        padding: 5px;
+        font-size: 12px;
+    }
 }

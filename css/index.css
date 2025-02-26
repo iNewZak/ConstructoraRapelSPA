@@ -1,26 +1,13 @@
-.full_fondo {
-    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/AreasVerdes.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .color1 {
     background-color: rgb(148, 148, 148);
 }
 
-.transparent_background {
-    opacity: 0.85;
+.head {
+    margin-left: 20%;
 }
 
-.color3 {
-    background-color: #ffffff;
-}
-
-.full {
-    background: radial-gradient(circle, #1a9423, #57c84d, #a3d977, #c8e6c9);
+.head2 {
+    margin-right: 10%;
 }
 
 .titulo {
@@ -28,10 +15,6 @@
     color: black;
     padding: 10px;
     justify-content: center;
-}
-
-.negro {
-    color: black;
 }
 
 .letra {
@@ -52,21 +35,6 @@ button {
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-.prev {
-    left: 10px;
-    transform: translateY(-50%);
-}
-
-.next {
-    right: 10px;
-    transform: translateY(-50%);
-}
-
-
-.padi {
-    padding: 200px;
 }
 
 .flecha,
@@ -97,55 +65,32 @@ button:hover {
     margin: 0;
 }
 
-.mision_vision,
-.mision_vision2 {
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    transition: background-size 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
+.col-md-3 {
+    padding: 10px;
 }
 
-.mision_vision {
-    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/mision.png");
+.vimision .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
-.mision_vision2 {
-    background-image: url("https://inewzak.github.io/ConstructoraRapelSPA/img/vision.png");
+.vimision .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.mision_vision::before,
-.mision_vision2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+.vimision p, h5{
+    padding: 15px;
+    text-align: center;
 }
 
-.mision_vision *,
-.mision_vision2 * {
-    position: relative;
-    z-index: 2;
+.vimision h5 {
+    font-weight: 900;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 @media (max-width: 768px) {
-
-    .mision_vision,
-    .mision_vision2 {
-        max-height: 250px;
-    }
 
     .flecha,
     .flecha2 {
@@ -173,5 +118,15 @@ button:hover {
         background-position: center !important;
         height: 50px !important;
         width: 50px !important;
+    }
+
+    .letra {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+    
+    .letra1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
     }
 }
