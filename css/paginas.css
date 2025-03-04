@@ -39,6 +39,7 @@ footer a {
     color: #333333 !important;
 }
 
+
 .inicio {
     margin-top: 50px;
 }
@@ -137,6 +138,9 @@ footer .dropdown-item:active {
     padding: 100px !important;
 }
 
+a{
+    text-decoration: none !important;
+}
 
 @media (max-width: 768px) {
     .padifooter {
