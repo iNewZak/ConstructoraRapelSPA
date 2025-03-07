@@ -156,6 +156,8 @@ h6,
 h6,
 strong {
     color: #32d36d !important;
+    font-weight: 700 !important;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 @media (max-width: 768px) {
