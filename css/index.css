@@ -95,6 +95,14 @@ h5 {
     width: 100%;
 }
 
+.proyecto img {
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cdcdcd;
+}
+
 @media (max-width: 768px) {
 
     .flecha,

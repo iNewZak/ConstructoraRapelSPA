@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Constructora Rapel SPA</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/paginas.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 
 <body>
@@ -168,6 +169,35 @@
         </div>
     </div>
 
+    <div class="container proyecto pb-5">
+        <h4 class="text-center p-3">Ejemplo de Proyectos</h4>
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-12 pb-2">
+                <img id="myImg1" src="img/Planos/1 (1).jpeg" alt="Proyecto 1">
+            </div>
+            <div class="col-md-4 col-12 pb-2">
+                <img id="myImg2" src="img/Planos/1 (2).jpeg" alt="Proyecto 2">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div>
+                <span class="close">&times;</span>
+                <div id="caption"></div>
+                <img class="modal-content" id="imgModal">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid contact color3 espacio">
+        <div class="container">
+            <h2>¿Quieres saber más sobre nosotros?</h2>
+            <p>Contáctanos y descubre cómo podemos ayudarte.</p>
+            <div class="text-end"><a href="contacto.html" class="btn btn-lg"
+                    style="background-color: #8b5a2b; font-weight: 900;">Contáctanos</a></div>
+        </div>
+    </div>
+
     <div class="container p-5 galeria">
         <h3 class="text-center">Galeria</h3>
         <div class="row justify-content-center">
@@ -184,15 +214,6 @@
 
         <div class="text-end" style="padding-bottom: 75px;">
             <a href="galeria.html" class="text-dark ">Ver Galeria ></a>
-        </div>
-    </div>
-
-    <div class="container-fluid contact color3 espacio">
-        <div class="container">
-            <h2>¿Quieres saber más sobre nosotros?</h2>
-            <p>Contáctanos y descubre cómo podemos ayudarte.</p>
-            <div class="text-end"><a href="contacto.html" class="btn btn-lg"
-                    style="background-color: #8b5a2b; font-weight: 900;">Contáctanos</a></div>
         </div>
     </div>
 
@@ -391,6 +412,81 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("imgModal");
+        var captionText = document.getElementById("caption");
+
+        document.getElementById("myImg1").onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        };
+
+        document.getElementById("myImg2").onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        };
+
+        document.getElementsByClassName("close")[0].onclick = function () {
+            modal.style.display = "none";
+            modalImg.classList.remove("zoom");
+            modalImg.style.transform = "scale(1)";
+        };
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                modalImg.classList.remove("zoom");
+                modalImg.style.transform = "scale(1)";
+            }
+        };
+
+        modalImg.addEventListener("wheel", function (event) {
+            event.preventDefault();
+
+            var scale = 1;
+            if (event.deltaY < 0) {
+                scale = 1.1;
+            } else {
+                scale = 0.9;
+            }
+
+            var currentScale = parseFloat(getComputedStyle(modalImg).transform.split(",")[3]);
+            var newScale = currentScale * scale;
+
+            newScale = Math.min(Math.max(newScale, 1), 3);
+            modalImg.style.transform = `scale(${newScale})`;
+        });
+
+        let isDragging = false;
+        let startX, startY, initialX, initialY;
+
+        modalImg.addEventListener("mousedown", function (event) {
+            isDragging = true;
+            startX = event.clientX;
+            startY = event.clientY;
+            initialX = modalImg.offsetLeft;
+            initialY = modalImg.offsetTop;
+            modalImg.classList.add("grab");
+        });
+
+        document.addEventListener("mousemove", function (event) {
+            if (isDragging) {
+                var dx = event.clientX - startX;
+                var dy = event.clientY - startY;
+                modalImg.style.left = initialX + dx + "px";
+                modalImg.style.top = initialY + dy + "px";
+            }
+        });
+
+        document.addEventListener("mouseup", function () {
+            isDragging = false;
+            modalImg.classList.remove("grab");
+        });
+    </script>
 </body>
 
 </html>
