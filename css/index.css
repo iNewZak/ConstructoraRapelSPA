@@ -79,12 +79,12 @@ button:hover {
 }
 
 .vimision p,
-h5 {
+h6 {
     padding: 15px;
     text-align: center;
 }
 
-.vimision h5 {
+.vimision h6 {
     font-weight: 900;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
